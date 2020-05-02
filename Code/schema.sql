@@ -1,13 +1,19 @@
--- Create Two Tables
-CREATE TABLE premise (
-  id INT PRIMARY KEY,
-  premise_name TEXT,
-  county_id INT
-);
+-- Drop any existing Table
+DROP TABLE listing_review
 
-CREATE TABLE county (
-  id INT PRIMARY KEY,
-  county_name TEXT,
-  license_count INT,
-  county_id INT
+-- Create Table
+CREATE TABLE listing_review (
+	Listing_ID INT, 
+	Listing_Title VARCHAR,
+	Host_Name VARCHAR,
+	Region VARCHAR,
+	Room_Type VARCHAR,
+	Price_per_Night INT,
+	Number_of_Reviews INT,
+	Last_Review_Time DATE,
+	Host_ID INT,
+	Review_Date DATE,
+	Reviewer_ID INT,
+	Reviewer_Name VARCHAR,
+	Comments VARCHAR
 );
