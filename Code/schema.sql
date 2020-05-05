@@ -17,3 +17,5 @@ CREATE TABLE listing_review (
 	Reviewer_Name VARCHAR,
 	Comments VARCHAR
 );
+
+
